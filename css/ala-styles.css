@@ -1,0 +1,653 @@
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro-ExtraLight.woff2') format('woff2'),
+        url('../fonts/SofiaPro-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro-Bold.woff2') format('woff2'),
+        url('../fonts/SofiaPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+
+
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+
+/* nav
+================================= */
+.nav-tabs > li > a {
+    border-radius: 0!important;
+}
+.nav-tabs {
+    display: flex;
+}
+.navbar-brand:hover, .dropdown-toggle:hover, .active a:hover, .nodrop a:hover{
+    text-decoration: none!important;
+}
+.subnavlist ul{
+    margin-bottom: 10px!important;
+}
+#navBox li a{
+    color: #000;
+}
+.navfondo {
+    background: #222;
+}
+
+
+/* container estructura
+================================= */
+#breadcrumb {
+    display: none;
+}
+#main {
+    width: 1170px;
+    padding: 20px;  
+}
+#main-content{
+    margin-bottom: 0!important;
+}
+.container-fluid {
+    max-width: none !important;
+    text-align: left;
+}
+/*
+.col-md-2 {
+    text-align: left;
+}
+
+.col-md-4 {
+    width: 20% !important;
+}
+
+.col-md-8 {
+    width: 80% !important;
+    float: right;
+}
+*/
+/*
+.col-md-offset-4 {
+    margin-left: 20%!important;
+}
+*/
+.col-md-6 {
+    width: 80% !important;
+}
+.col-sm-5, .col-md-5{
+    padding: 0!important;
+}
+.col-sm-8{
+    width: 98% !important;
+    margin-left: 0px !important;
+}
+
+
+/* h1 titulares
+================================= */
+/*titular BioDIBA*/
+#searchHeader, #listHeader h1, .centre h1, #recordId {
+    padding: 10px 0;
+    margin-top: 20px !important;
+    font-weight: 400;
+    font-size: 20px !important;
+    color: #000!important;    
+}
+/*titular Registro*/
+#listHeader {
+    width: 100%;
+    margin: auto;
+    border-bottom: none!important;
+}
+/*título campos form*/
+.tab-pane h4 {
+    font-size: 17px!important;
+    margin-top: 30px;
+}
+
+/* btn botones
+================================= */
+/*btn desktop*/
+.hidden-lg {
+    padding-left: 50%!important;
+    padding-bottom: 30px;
+}
+.hidden-lg a{
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+
+
+
+/*ESTILOS BIOARK*/
+/*................................VIEW 01.......*/
+/*contenedor info*/
+
+#content{
+    
+    -webkit-box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tab-content {
+    border: none !important;
+    background: #fff;
+}
+/*inputs*/
+.form-control {
+    border-radius: 0!important;
+}
+.input-group {
+    width: 100% !important;
+}
+/*botón buscar*/
+#locationSearch{
+    color: #fff!important;
+    background: -webkit-linear-gradient(left, #57b285 50%,#3d7d9f 100%)!important;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+#locationSearch:hover, #solrSubmit:hover{
+    
+    background: -webkit-linear-gradient(right, #7db79c 0%,#4d81bb 100%) !important;
+}
+
+
+
+
+/*datos*/
+.recordRow {
+    text-align: left;
+}
+/*fechas form*/
+.small {
+    margin-left: 22%;
+}
+
+
+
+
+/*................................VIEW 02.......*/
+/*ARRIBA*/
+/*búsqueda avanzada*/
+#advancedSearchLink {
+    margin-top: 20px;
+}
+#advancedSearchLink a{
+    color: #000!important;
+}
+.input-group {
+    margin: 20px 0;
+}
+/*btn búsqueda rápida*/
+#solrSubmit{
+    color: #fff !important;
+    background: -webkit-linear-gradient(left, #57b285 50%,#3d7d9f 100%)!important;
+    border: transparent;
+    
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Sofia Pro';
+    font-weight: 200;
+}
+/*BARRA LATERAL*/
+/*títulos 1 Filtrar*/
+.sidebar h3{
+    font-size: 18px!important;
+}
+/*títulos 2 Taxón*/
+.showHideFacetGroup {
+    color: #000 !important;
+    font-size: 16px;
+    font-family: 'Sofia Pro';
+    font-weight: bold;
+}
+/*títulos 3 Nombre Especie ...*/
+.FieldName{
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/*elegir más*/
+.showHide {
+    margin-bottom: 20px !important;
+}
+.multipleFacetsLink {
+    color: #1b82be !important;
+    font-family: 'Sofia Pro';
+    font-weight: bold;
+}
+.nano {
+    border-bottom: solid 1px #1b82be;
+    min-height: 150px;
+}
+/*flecha*/
+.caret{
+    color: #1b82be!important;
+}
+.right-caret{
+    border-left-color: #1b82be !important;
+}
+/*CENTRAL*/
+/*pestañas*/
+.nav-tabs > li > a{
+    margin: 0!important;
+    border: none!important;
+}
+#t1, #t2, #t3, #t4, #t5 {
+    color: #fff;
+}
+#t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover {
+    color: #000;
+}
+/*contenido tabla*/
+.rowA{
+    padding-top: 20px;
+}
+.rowA, .rowB, .resultValue{
+    float: left;
+}
+.rowB a, .rowA a{
+    background: #fff !important;
+    border: 1px solid #1b82be;
+    
+    
+    padding: 2px 10px;
+    float: right;
+    font-family: 'Sofia Pro';
+    font-weight: 200;
+    font-size: 10px;
+    margin-top: 30px;
+    
+    color: #1b82be;
+}
+
+.rowB a:hover, .rowA a:hover{
+   background: -webkit-linear-gradient(left, #57b285 50%,#3d7d9f 100%)!important;
+    color: #fff!important;
+}
+
+.resultsLabel{
+    color: #000!important;
+}
+.resultValue{
+    color: #888!important;
+    padding-right: 5px;
+}
+
+#results .rowB{
+    padding-bottom: 30px !important;
+    border-bottom: 1px solid #1b82be !important;
+}
+#results {
+    border-top: 1px solid #1b82be !important;
+}
+
+.form-group{
+    font-size: 14px;
+    color: #666;
+}
+
+/*................................VIEW 03.......*/
+/*btn regresar*/
+#backBtn {
+    margin-left: 30px;
+}
+/*btn compara*/
+#showRawProcessed {
+}
+
+a:link{
+    color: #1b82be;
+}
+
+form .btn{
+    margin-left: 17% !important;
+}
+form .btn:last-of-type{
+    margin-left: 0px !important;
+}
+
+/*...........................................................................*/
+/*MEDIA*/
+
+@media (min-width:1200px) {
+    #results .rowB, #results .rowA{
+        width: 100%;
+    }
+    .rowB a, .rowA a{
+        margin-top: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    #main {
+        width: 970px;
+    }
+}
+
+@media (max-width:991px) {
+    .col-md-8 {
+        width: 100% !important;
+    }
+
+    .col-md-4 {
+        width: 100% !important;
+    }
+
+    .small {
+        margin-left: 0;
+    }
+
+    #main {
+        width: 750px;
+    }
+    .col-md-6 {
+    width: 100% !important;
+    }
+    
+    
+    .hidden-lg{
+        padding-left: 50%!important;
+    }
+    .imgCon{
+        width: 48.8%!important;
+    }
+    form .btn{
+        margin-left: 0!important;
+    }
+    
+}
+
+@media (max-width:771px) {
+    .nav-tabs {
+        display: flex;
+        flex-flow: column;
+    }
+    .col-sm-9 {
+        width: auto !important;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .input-group-btn {
+
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+    .tabbable ul li a{
+     border-top: 1px solid #e6e6e6 !important;
+}
+}
+
+@media (max-width:740px) {
+    #main {
+        width: 100%;
+    }
+
+    #searchBoxZ {
+        text-align: left;
+    }
+
+    #content2 {
+        margin: auto;
+        width: 100% !important;
+    }
+
+    .row {
+        margin-left: auto !important;
+    }
+
+    .col-sm-8 {
+        width: 100% !important;
+        padding-left:0 !important;
+    }
+
+    #sortWidgets {
+        margin-top: 15px;
+    }
+    .recordHeader{
+        display: flex;
+        flex-flow: column;
+    }
+    #backBtn{
+        margin-bottom: 20px;
+    }
+.col-sm-9, .col-md-9, .col-sm-3, .record-sidebar, .col-sm-12, .col-md-12, .col-md-4{
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width:551px) {
+    #sortWidgets {
+        margin-top: 15px;
+        text-align: left !important;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .hidden-sm {
+        display: none;
+    }
+
+    tr {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .leaflet-left {
+        margin-top: 140px;
+    }
+
+    td.dwcLabel {
+        width: 100% !important;
+    }
+    .imgCon{
+        width: 100% !important;
+    }
+    #content div.pagination{
+        white-space: normal!important;
+    }
+    #content div.pagination a, .gap{
+        margin: 5px 0;
+    }
+
+}
+
+@media (max-width:480px) {
+    input#taxaQuery {
+        width: 98% !important;
+    }
+    
+}
+/*...........................................................................*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.facets li a{
+    color: #000!important;
+    font-family: 'Sofia Pro';
+    font-weight: 200;
+    font-size: 11px;
+}
+.tooltips{
+    font-size: 11px;
+}
+.tabbable ul li a{
+/*    background: #fff !important;*/
+    color: #000!important;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Sofia Pro';
+    font-weight: 200;
+    
+    border-right: 1px solid #e6e6e6 !important;
+}
+.tabbable ul li a:hover{
+    color: #1b82be!important;
+}
+
+
+.tabbable ul li a:focus, .tabbable ul li:first-of-type + li a:focus, .tabbable ul li:nth-child(2) + li a:focus, .tabbable ul li:nth-child(3) + li a:focus, .tabbable ul li:nth-child(4) + li a:focus{
+    background: -webkit-linear-gradient(left, #57b285 50%,#3d7d9f 100%)!important;
+    color: #fff !important;
+    
+}
+
+
+
+
+
+#content div.pagination a, #content div.pagination span{
+    text-shadow: none!important;
+    box-shadow: none!important;
+    background-image: none!important;
+    background-color: #fff!important;
+}
+#content div.pagination span.currentStep{
+    background-color: #000!important;
+}
+
+.btn{
+    border-radius: 0!important;
+}
+.btn-primary{
+   background: -webkit-linear-gradient(left, #57b285 50%,#3d7d9f 100%)!important;
+    color: #fff !important;
+/*    margin-left: 5px;*/
+    border: none !important;
+}
+
+.btn-primary:hover {
+        background: -webkit-linear-gradient(right, #7db79c 0%,#4d81bb 100%) !important;
+}
+
+.imgCon{
+    width: 32.3%;
+}
+.imgCon img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.panel-group-toggle{
+    color: #1d3c5f;
+    font-size: 12px;
+}
+
+.govbar-link:hover, .govbar-link:focus, .govbar-link:visited{
+    color: #000;
+}
+
+.brief{
+    text-align: center!important;
+    color: #1d3c5f!important;
+}
+.meta{
+    opacity: 1!important;
+}
+.imgCon{
+    margin-bottom: 20px!important;
+}
+.text-right{
+    padding-right: 0!important;
+}
+.null{
+    color: #000!important;
+}
+
+#recordLayerControl {
+    margin-left: 10px;
+}
+
+.nav-tabs{
+    border-bottom: none!important;
+}
+
+.well{
+    background: #fbfbfb;
+}
+.well-sm{
+    border-radius: 0 !important;
+    border: none !important;
+}
+#facetWell{
+    padding: 20px !important;
+}
+
+#recordId{
+    line-height: 25px;
+}
+a:link, a:visited, #content2 a:link, #content2 a:visited, .occurrenceTable td.dwcLabel, .value, .dataQualityHelpLink, .dataQualityHelpLink, .dataQualityResults td{
+    font-size: 13px;
+}
+
+.form-group label{
+    font-family: 'Sofia Pro';
+    font-weight: 200;
+}
+
+/*
+#dataQuality{
+    transform: translateX(120px);
+}
+*/
+
+#taxaUpload, #catalogUpload, #spatialSearch{
+    margin-top: 30px;
+}
+h1{
+    font-weight: bold!important;
+}
+.FieldName{
+    font-weight: 200!important;
+    color: #000;
+}
+.facetGroupName a{
+    font-size: 16px !important;
+}
+#searchInfoRow a{
+    color: #000!important;
+}
+
+
+
+
