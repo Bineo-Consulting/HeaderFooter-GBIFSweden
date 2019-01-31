@@ -5,7 +5,7 @@
         <div class="topbar">
             <div class="logo">
                <a href="">
-                <img src="http://localhost/SWEDEN/images/logo.png" alt="">
+                <img src="http://localhost/SWEDEN/HeaderFooter-GBIFSweden-/images/logo.png" alt="">
                 </a>
             </div>
 
@@ -21,7 +21,26 @@
                 </form>
             </div>
 
-            <div class="menu">
+<!--
+     <div class="buscador">
+                <form role="search" method="get" placeholder="Scientific or common names" action="">
+
+                    <form role="search" method="get" action="https://bioatlas.se/generic-hub/occurrences/search?taxa=#tab_mapView" class="search-top">
+	<input id="query" name="q" type="text" placeholder="Scientific or common names" class="search-box"/>
+	<button type="submit" class="search-btn"></button>
+	</form>  
+                </form>
+            </div>
+-->
+   
+   
+  
+           
+           
+           
+           
+           
+            <div class="menu1">
                 <ul>
                     <li class="submenu-s"><a class="flecha" href="">Start exploring</a>
                     <ul>
@@ -59,6 +78,115 @@
 
     </div>
 
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////        -->
+
+    <input type="checkbox" id="offcanvas-menu" class="toggle menu2" />
+
+    <div class="container menu2">
+
+        <aside class="menu-container">
+
+            <div class="menu-heading clearfix">
+                <label for="offcanvas-menu" class="close-btn">
+                    <i class="fa cruz"></i>
+                </label>
+            </div>
+            <!--end menu-heading-->
+
+            <nav class="slide-menu">
+                <ul>
+                    <li class="dropdown"><a href="#" >Start exploring</a>
+                        <ul class="noarrow">
+                            <li><a href="">Search species ocurrences</a></li>
+                            <li><a href="">Search Data Partners</a></li>
+                            <li><a href="">Search Datasets</a></li>
+                            <li><a href="">View images</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown"><a href="#">Search & Analyse</a>
+                        <ul class="noarrow">
+                            <li><a href="">Explore by polygon</a></li>
+                            <li><a href="">Explore by location</a></li>
+                            <li><a href="">Explore by region</a></li>
+                            <li><a href="">Spatial portal</a></li>
+                            <li><a href="">Mirroreum</a></li>
+                            <li><a href="">Our APIs</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown"><a href="#">About us</a>
+                        <ul class="noarrow">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">How to use the BioAtlas</a></li>
+                            <li><a href="">How to work with data</a></li>
+                            <li><a href="">How to cite the BioAtlas</a></li>
+                            <li><a href="">The living Atlase Community</a></li>
+                            <li><a href="">GBIF Network</a></li>
+                            <li><a href="">BioAtlas Blog</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown"><a href="#">ALA Community</a>
+                        <ul class="noarrow">
+                            <li><a href="">Argentina</a></li>
+                            <li><a href="">Australia</a></li>
+                            <li><a href="">Brazil</a></li>
+                            <li><a href="">Canada</a></li>
+                            <li><a href="">Costa Rica</a></li>
+                            <li><a href="">Estonia</a></li>
+                            <li><a href="">France</a></li>
+                            <li><a href="">Isle of Man</a></li>
+                            <li><a href="">Portugal</a></li>
+                            <li><a href="">Spain</a></li>
+                            <li><a href="">Scotland</a></li>
+                            <li><a href="">United Kingdom</a></li>
+                            <li><a href="">Wales</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="logli"><a class="loginhamburger" href="#">Login</a></li>
+                </ul>
+            </nav>
+            <!--end slide-menu -->
+
+        </aside>
+        <!--end menu-container-->
+
+        <section class="content">
+
+            <label for="offcanvas-menu" class="full-screen-close"></label>
+
+            <div class="menu right">
+                <label for="offcanvas-menu" class="toggle-btn">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+            <!--end menu-->
+
+
+        </section>
+        <!--end content-->
+
+    </div>
+    <!--end container -->
+
+
+    <script>
     
+        document.querySelectorAll('.dropdown').forEach(function(node) {
+            node.addEventListener('click', function () {
+                const hovering = this.classList.contains('hovering')
+                document.querySelectorAll('.dropdown').forEach(function (node) {
+                    node.classList.remove('hovering');
+                })
+                if (!hovering) this.classList.toggle('hovering');
+            })
+        })
+    </script>
+
+ <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
  
 </header>

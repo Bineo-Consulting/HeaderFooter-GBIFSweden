@@ -40,6 +40,99 @@ a:link {
 }
 */
 
+/*ESTILOS DAVID*/
+.slide-menu ul{
+    padding-left: 70px;
+}
+.dropdown ul{
+    padding-left: 0;
+}
+
+.slide-menu ul li{
+    max-height: 60px;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    position: relative;
+    
+    padding-bottom: 10px;
+}
+
+.slide-menu ul li a{
+    font-family: 'Sofia Pro';
+    font-size: 14px;
+    line-height: 60px;
+    padding-left: 10px;
+}
+
+.dropdown a:after{
+    content: url(http://localhost/SWEDEN/HeaderFooter-GBIFSweden-/images/flecha.png);
+    z-index: 2000;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+
+.noarrow a:after{
+    content: none;
+}
+
+.logli a{
+    padding-left: 30px;
+}
+
+.loginhamburger{
+    
+    background: -webkit-linear-gradient(left, #57b285 0%, #3d7d9f 100%);
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px !important;
+    padding-left: 30px!important;
+}
+.loginhamburger:hover{
+    background: -webkit-linear-gradient(right, #57b285 0%, #3d7d9f 100%);
+    transform: scale(.95);
+}
+.logli{
+/*    margin-left: 20px;*/
+}
+.logli:hover{
+    background: transparent !important;
+}
+
+/*fa-times*/
+.cruz:before{
+    content: url(http://localhost/SWEDEN/HeaderFooter-GBIFSweden-/images/close-icon.png);
+    position: absolute;
+    top: -20px;
+    right: 10px;
+
+    z-index: 3000;
+}
+
+
+
+.slide-menu ul li ul li{
+    height: 40px;
+    padding: 0;
+}
+
+.slide-menu ul li:hover{
+    background-color: #000;
+}
+
+.hovering{
+    max-height: none !important;
+}
+
+
+
+/*ESTILOS DAVID*/
+
+
+
+
 .cabecera, .footer {
     color: #444444;
 }
@@ -101,12 +194,12 @@ a:link {
     border: none;
     box-sizing: border-box;
     background-color: transparent;
-    background-image: url(http://localhost/SWEDEN/images/lupa.png);
+    background-image: url(http://localhost/SWEDEN/HeaderFooter-GBIFSweden-/images/lupa.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.menu {
+.menu, .menu1 {
     position: absolute;
     z-index: 1000;
     top: 30px;
@@ -116,14 +209,14 @@ a:link {
     font-family: 'Sofia Pro';
     font-weight: 800;
 }
-.menu ul {
+.menu ul, .menu1 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
 
 }
-.menu ul li a {
+.menu ul li a, .menu1 ul li a {
     position: relative;
     text-decoration: none;
     color: #444444;
@@ -133,7 +226,7 @@ a:link {
     font-weight: 800;
     padding-right: 30px;
 }
-.menu ul li a:hover{
+.menu ul li a:hover, , .menu1 ul li a:hover{
     background-color: #f2f2f2;
 }
 
@@ -141,7 +234,7 @@ a:link {
     position: absolute;
     top: 11px;
     right: 10px;
-    content: url(http://localhost/SWEDEN/images/flecha.png);
+    content: url(http://localhost/SWEDEN/HeaderFooter-GBIFSweden-/images/flecha.png);
 }
 
 .submenu-s ul{
@@ -162,10 +255,9 @@ a:link {
     background-color: #999;
 }
 
-.menu ul li:hover ul{
+.menu ul li:hover ul, .menu1 ul li:hover ul{
     display: block;
 }
-
 
 
 
@@ -190,10 +282,6 @@ a:link {
 }
 
 /*estilos footer*/
-
-.footer {
-    
-}
 
 .icons{
     display: flex;
@@ -310,6 +398,10 @@ a:link {
 
 /*media query*/
 
+.menu2{
+    display: none;
+}
+
 @media (max-width: 1500px){
     .search-top{
     left: 25%;
@@ -319,8 +411,9 @@ a:link {
         width: 20%;
     }
 }
+
 @media (max-width: 1370px){
-    .menu{
+    .menu1{
         display: none;
     }
     .search-top{
@@ -328,12 +421,25 @@ a:link {
         left: auto;
         right: 10%;
     }
+    .menu2{
+        display: block;
+    }
 }
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width:900px){
+
+}
+
 @media (max-width: 660px){
     .imglogos{
         width: 25%;
         padding: 0 2%;
     }
+
 }
 @media (max-width: 620px){
     .botondevelopment{
@@ -376,6 +482,7 @@ a:link {
         width: 30%;
         padding: 0 5%;
     }
+    
 }
 
 .imglogos{
@@ -391,4 +498,259 @@ a:link {
     cursor: pointer;
 }
 
+*{
 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+}
+
+.slide-menu{
+    width: 300px;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*=====  SLIDE MENU  ======*/
+
+/*----------  HIDE SELECT CHECKBOX  ----------*/
+
+.toggle, 
+.full-screen-close
+{
+	display: none;
+}
+
+.full-screen-close
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	cursor: pointer;
+	top:0;
+	left:0;
+    z-index: 100000;
+}
+
+/*----------  TOGGLE OFF-CANVAS MENU  ----------*/
+
+.toggle:checked + .container > .menu-container 
+{
+/*  	margin-left: 70%;*/
+    position: absolute;
+    right: 0;
+}
+
+.toggle:checked + .container > .content .full-screen-close
+{
+  	display: block;
+  	background: rgba(0,0,0,.8);
+}
+
+
+
+/*
+.menu
+{
+	padding-top: 20px;
+}
+*/
+
+.toggle-btn,
+.close-btn
+{
+	cursor: pointer;
+  
+}
+
+.toggle-btn
+{
+	font-size: 2.25rem;
+}
+
+
+.close-btn
+{
+	position: absolute;
+	font-size: 1.5rem;
+	padding: 1.5rem;
+	color: #ededed;
+}
+
+.menu-container, 
+.content
+{
+	transition: margin 0.2s ease-in-out;
+}
+
+.menu-container
+{
+/*	background: #00000099;*/
+/*	width: 27%;*/
+	margin-left: 100%;
+	
+	float: right;
+	height: 100%;
+	position: absolute;
+    top: 0;
+
+	z-index:99;
+    
+    transform: translateX(-50px);
+}
+
+.slide-menu i
+{
+	margin-right: 1rem;
+
+	vertical-align: middle;
+}
+.slide-menu li a
+{
+	color: #fff;
+
+	display: block;
+
+	transition: background-color .5s ease-in-out;
+}
+
+.slide-menu li a:hover
+{
+/*	background-color: #34495e;*/
+}
+
+/*=====  MEDIA QUERIES  ======*/
+@media (max-width: 460px) {
+	.slide-menu li a
+	{
+		font-size: 0.875rem;
+		padding-left: 12px;
+	}
+
+	.slide-menu li i
+	{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 320px){
+	.slide-menu li i
+	{
+		display: none;
+	}
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: " "; display: none; }
+.clearfix:after { clear: both; }
+
+a
+{
+	text-decoration: none;
+}
+
+ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.content
+{
+	width: 100%;
+    max-width: 1200px; 
+
+	margin: 0 auto;
+    padding: 0 1.5rem; 
+    line-height: 1.5;
+}
+
+.right
+{
+	float: right;
+}
+
+/*===== GENERAL MEDIA QUERIES ======*/
+
+@media (max-width: 980px) {
+	.menu-options
+	{
+		width: 50%;
+	}
+}
+
+@media (max-width: 605px) {
+	.menu-options
+	{
+		width: 80%;
+	}
+}
+
+@media (max-width: 518px) {
+	.ap-meta a span
+	{
+		display: none;
+	}
+}
+
+
+@media (max-width: 375px) {
+	.ap-meta a span
+	{
+		display: none;
+	}
+	header h1
+	{
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+	.menu-options
+	{
+		width: 100%;
+	}
+}
+
+@media (max-width: 330px) {
+	.content
+	{
+		padding: 0 1rem;
+	}
+	.menu
+	{
+		margin-bottom: 1.5rem;
+	}
+	
+	.ap-meta a span
+	{
+		display: none;
+	}
+
+	header h1
+	{
+		font-size: 1.125rem;
+		font-weight: 600;
+	}
+
+	.menu-options
+	{
+		width: 100%;
+	}
+}
+
+.fa{
+    font-size: 20px !important;
+    padding-right: 20px;
+}
+.cruz{
+    font-size: 60px !important;
+}
+.menu-container{
+    z-index: 10000000;
+}
