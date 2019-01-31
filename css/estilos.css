@@ -202,13 +202,18 @@ a:link {
 .menu, .menu1 {
     position: absolute;
     z-index: 1000;
-    top: 30px;
+    top: 15px;
     right: 0;
     display: flex;
     margin-right: 50px;
     font-family: 'Sofia Pro';
     font-weight: 800;
 }
+
+.menu1{
+    margin-top: 15px;
+}
+
 .menu ul, .menu1 ul {
     margin: 0;
     padding: 0;
@@ -417,9 +422,9 @@ a:link {
         display: none;
     }
     .search-top{
-        width: 30%;
+        width: 40%;
         left: auto;
-        right: 10%;
+        right: 15%;
     }
     .menu2{
         display: block;
@@ -474,6 +479,9 @@ a:link {
         top: 100px;
         right: 0;
         margin: 2%;
+    }
+    .menu{
+        margin-right: 20px;
     }
 }
 
@@ -746,11 +754,16 @@ ul
 
 .fa{
     font-size: 20px !important;
-    padding-right: 20px;
+/*    padding-right: 20px;*/
 }
 .cruz{
     font-size: 60px !important;
 }
 .menu-container{
     z-index: 10000000;
+}
+
+.nav-tabs>li.active>a{
+    background: -webkit-linear-gradient(left, #57b285 0%, #3d7d9f 100%);
+    color: #fff !important;
 }
